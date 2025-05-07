@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # A* Agent uses A* algorithm to find the optimal path to the nearest treasure
 
 """

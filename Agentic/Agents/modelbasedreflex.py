@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Model-Based Reflex Agent moves randomly but remembers past visits
 import random
 

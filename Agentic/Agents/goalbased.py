@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Goal-Based Agent is heuristic-based and uses BFS algorithm to find the path to the nearest treasure
 
 """

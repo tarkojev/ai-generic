@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Q-Learning Agent uses Q-learning to learn the optimal policy for the grid world
 
 """

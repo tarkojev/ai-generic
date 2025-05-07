@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random  # Random treasures and obstacles placements on the grid. Random movements.
 import copy  # To copy-deep the grid environment for different agents.
 import heapq  # To enable priority queue functionality where the smallest value is always first.

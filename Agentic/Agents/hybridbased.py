@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Hybrid Agent combines the features of the various agents to make decisions
 
 import random

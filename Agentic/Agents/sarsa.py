@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # SARSA Agent uses SARSA to learn the optimal policy for the grid world
 """
 SARSA is an on-policy reinforcement learning algorithm that updates the Q-values based on the action taken and the next action selected.

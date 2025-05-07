@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Greedy Agent uses a heuristic to find the shortest path to the nearest treasure
 
 """

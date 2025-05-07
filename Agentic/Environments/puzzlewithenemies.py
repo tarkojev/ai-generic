@@ -1,5 +1,6 @@
-import random  # Random treasures and obstacles placements on the grid. Random movements.
+#!/usr/bin/env python3
 
+import random  # Random treasures and obstacles placements on the grid. Random movements.
 
 """
 The PuzzleWithEnemies represents a simple 2D grid-based environment where an agent can move around, collect treasures, and interact with a switch and a door.

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Learning Agent learns from the environment and improves its performance over time
 
 import random
