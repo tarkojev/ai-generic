@@ -1,0 +1,134 @@
+{
+    "tasks": [
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.reflex.SimpleReflexAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.reflex.SimpleReflexAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.reflex_model.ModelBasedReflexAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.reflex_model.ModelBasedReflexAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.goal.GoalBasedAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.goal.GoalBasedAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.utility.UtilityBasedAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.utility.UtilityBasedAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.greedy.GreedyAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.greedy.GreedyAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.astar.AStarAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.astar.AStarAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.qlearning.QLearningAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.qlearning.QLearningAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.sarsa.SARSAAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.sarsa.SARSAAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.learning.LearningAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.learning.LearningAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+  
+      {
+        "environment": "Environments.treasure.TreasureHunting",
+        "agent": "Agents.hybrid.HybridAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      },
+      {
+        "environment": "Environments.puzzle.PuzzleWithEnemies",
+        "agent": "Agents.hybrid.HybridAgent",
+        "grid_size": 5,
+        "max_steps": 100
+      }
+    ]
+  }
+  
