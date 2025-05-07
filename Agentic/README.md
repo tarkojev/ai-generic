@@ -13,3 +13,5 @@ List of Implemented Agents
  10. SARSA Agent: Uses SARSA to learn the optimal policy for the grid world.
 
 Scenarios:
+1. The PuzzleWithEnemies represents a simple 2D grid-based environment where an agent can move around, collect treasures, and interact with a switch and a door.
+2. The TresureHunting represents a simple 2D grid-based and randomly generated environment where an agent can move around, collect treasures, and avoid obstacles.
