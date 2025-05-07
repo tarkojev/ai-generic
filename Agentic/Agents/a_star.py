@@ -4,6 +4,8 @@
 A* algorithm is a popular pathfinding and graph traversal algorithm that applies heuristics to find the shortest path from a start node to a goal node.
 """
 
+import heapq  # For priority queue functionality
+
 class AStarAgent:
     def __init__(self):
         self.path = []

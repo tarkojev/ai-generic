@@ -4,6 +4,9 @@ SARSA is an on-policy reinforcement learning algorithm that updates the Q-values
 It stands for State-Action-Reward-State-Action. 
 The agent learns the value of the action taken in the current state and updates its Q-values accordingly.
 """
+
+import random  # For random number generation
+
 class SARSAAgent:
     def __init__(self):
         self.q_table = {}

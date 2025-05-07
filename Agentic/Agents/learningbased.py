@@ -1,4 +1,7 @@
 # Learning Agent learns from the environment and improves its performance over time
+
+import random
+
 class LearningAgent:
     def __init__(self):
         self.q_table = {}

@@ -4,6 +4,8 @@
 Greedy Agent uses a heuristic to find the shortest path to the nearest treasure
 """
 
+import heapq  # For priority queue in A* algorithm
+
 class GreedyAgent:
     def __init__(self):
         self.path = []

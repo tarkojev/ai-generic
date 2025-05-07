@@ -1,4 +1,13 @@
 # Utility-Based Agent uses A* algorithm to find the optimal path to the nearest treasure
+
+"""
+Utility-Based Agent is different from the other agents as it uses a utility-based approach to select actions.
+Utility-based approach are based on the idea of maximizing the expected utility of an action.
+Utility in this case is a measure of the desirability of a state or outcome.
+"""
+
+import heapq # For priority queue functionality
+
 class UtilityBasedAgent:
     def __init__(self):
         self.path = []

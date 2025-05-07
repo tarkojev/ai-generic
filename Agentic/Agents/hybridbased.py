@@ -1,4 +1,12 @@
 # Hybrid Agent combines the features of the various agents to make decisions
+
+import random
+from Agents.simplereflex import SimpleReflexAgent
+from Agents.modelbasedreflex import ModelBasedReflexAgent
+from Agents.goalbased import GoalBasedAgent
+from Agents.utilitybased import UtilityBasedAgent
+from Agents.q_learning import QLearningAgent as LearningAgent
+
 class HybridAgent:
     def __init__(self):
         self.simple_reflex_agent = SimpleReflexAgent()

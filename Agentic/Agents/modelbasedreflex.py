@@ -1,4 +1,6 @@
 # Model-Based Reflex Agent moves randomly but remembers past visits
+import random
+
 class ModelBasedReflexAgent:
     def __init__(self):
         self.visited = set()

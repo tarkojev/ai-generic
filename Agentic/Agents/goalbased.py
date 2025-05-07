@@ -5,6 +5,8 @@ Goal-Based Agent is heuristic-based and uses BFS algorithm to find the path to t
 BFS or Breadth-First Search is a graph traversal algorithm that explores all the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
 """
 
+from collections import deque  # For deque (FIFO/LIFO queues)
+
 class GoalBasedAgent:
     def __init__(self):
         self.path = []

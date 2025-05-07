@@ -1,4 +1,13 @@
 # Q-Learning Agent uses Q-learning to learn the optimal policy for the grid world
+
+"""
+Q-learning is an off-policy reinforcement learning algorithm that learns the value of the optimal action in a given state.
+It updates the Q-values based on the action taken and the maximum expected future reward.
+Q-values are the expected future rewards for each action taken in a given state.
+"""
+
+import random # For random number generation
+
 class QLearningAgent:
     def __init__(self):
         self.q_table = {}
