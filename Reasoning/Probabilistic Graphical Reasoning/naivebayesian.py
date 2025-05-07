@@ -40,7 +40,7 @@ BREAST_COLS = ["ID", "Class"] + BREAST_FEATURE_COLS
 
 class NaiveBayesClassifier:
     def __init__(self, cervical_path, breast_path):
-        self.cervical = pd.read_csv(cervical_path)                       # has header
+        self.cervical = pd.read_csv(cervical_path) # has header
         self.breast   = pd.read_csv(
             breast_path,
             header=None,
