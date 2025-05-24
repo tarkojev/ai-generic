@@ -3,7 +3,7 @@
 python3 run.py
 ```
 
-# Output of SAT run
+# Output of Agents run
 ```bash
 === Running: Agents.simplereflex.SimpleReflexAgent on Environments.treasurehunting.TreasureHunting ===
 
