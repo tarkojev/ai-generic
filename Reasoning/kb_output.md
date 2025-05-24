@@ -24,3 +24,4 @@ Task 4: List ancestor relationships:
 
 Logical Reasoning end.
 ```
+![KB ](/Reasoning/Figure_kb.png)

@@ -201,3 +201,62 @@ if __name__ == "__main__":
     lr.task2()
     lr.task3()
     lr.task4()
+
+# Visualization of the family tree with eye color inheritance and relationships
+import networkx as nx
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from matplotlib.lines import Line2D
+
+G = nx.DiGraph()
+# Parents
+G.add_edges_from([
+    ('Alice', 'Carol'),
+    ('Bob', 'Carol'),
+    ('Alice', 'Dave'),
+    ('Bob', 'Dave'),
+    ('Carol', 'Frank')
+])
+
+# Siblings
+G.add_edge('Carol', 'Dave', relation='Sibling')
+
+eye_colors = {
+    'Carol': 'blue',
+    'Frank': 'blue'
+}
+
+node_colors = []
+for node in G.nodes():
+    if node in eye_colors and eye_colors[node] == 'blue':
+        node_colors.append('skyblue')
+    else:
+        node_colors.append('lightgray')
+
+edge_colors = []
+edge_styles = []
+for u, v in G.edges():
+    if (u, v) in [('Carol', 'Dave')]:
+        edge_colors.append('green')
+        edge_styles.append('dashed')
+    else:
+        edge_colors.append('gray')
+        edge_styles.append('solid')
+
+plt.figure(figsize=(9, 7))
+pos = nx.spring_layout(G, seed=42)
+for (u, v), color, style in zip(G.edges(), edge_colors, edge_styles):
+    nx.draw_networkx_edges(G, pos, edgelist=[(u, v)], edge_color=color, style=style)
+nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=1500)
+nx.draw_networkx_labels(G, pos, font_size=10)
+
+blue_patch = mpatches.Patch(color='skyblue', label='Has blue eyes')
+gray_patch = mpatches.Patch(color='lightgray', label='Unknown/Other eye color')
+parent_line = Line2D([0], [0], color='gray', lw=2, label='Parent')
+sibling_line = Line2D([0], [0], color='green', lw=2, linestyle='--', label='Sibling')
+
+plt.legend(handles=[blue_patch, gray_patch, parent_line, sibling_line], loc='lower left')
+plt.title("Family Tree with Eye Color and Relationships")
+plt.axis('off')
+plt.tight_layout()
+plt.show()
