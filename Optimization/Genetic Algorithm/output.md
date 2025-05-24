@@ -27,7 +27,6 @@ Run 10: Tour Distance/Fitness: 3444766
 Run 10: Tour Path: [67, 78, 47, 20, 43, 39, 61, 79, 98, 91, 86, 82, 65, 1, 56, 42, 38, 81, 24, 76, 40, 66, 74, 29, 69, 35, 95, 73, 92, 19, 32, 25, 11, 87, 84, 16, 14, 28, 41, 60, 5, 48, 10, 4, 90, 27, 46, 15, 68, 2, 63, 75, 18, 7, 89, 94, 44, 83, 70, 62, 36, 88, 9, 100, 37, 93, 52, 6, 85, 80, 49, 72, 33, 99, 51, 59, 34, 31, 12, 58, 57, 22, 8, 45, 53, 71, 96, 21, 17, 30, 26, 97, 55, 64, 3, 23, 77, 13, 54, 50]
 
 Yay all 10 Runs are now completed! Here is the summary of all GA Runs:
-
 Average Distance/Fitness over 10 runs: 3719269.7
 Total time of all Runs: 21.55 seconds
 Best Overall Distance/Fitness: 3444766
