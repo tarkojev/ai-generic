@@ -83,12 +83,12 @@ HSAT on uf150-081.cnf: 44 runs hit the flip limit of 1000.
 HWSAT on uf150-081.cnf: 27 runs hit the flip limit of 1000.
 
 Graph was generated and displayed:
-![Runlength Distribution uf150-81](/Optimization/SATs/Figure_1.png)
+![Runlength Distribution uf150-81](Optimization/SATs/Figure_1.png)
 
 HSAT on uf150-099.cnf: 2 runs hit the flip limit of 1000.
 HWSAT on uf150-099.cnf: 1 runs hit the flip limit of 1000.
 
 Graph was generated and displayed:
-![Runlength Distribution uf150-99](/Optimization/SATs/Figure_2.png)
+![Runlength Distribution uf150-99](Optimization/SATs/Figure_2.png)
 
 ```
