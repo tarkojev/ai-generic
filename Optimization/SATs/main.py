@@ -312,7 +312,6 @@ class GSAT_solver:
                 breaking ties by choosing the least recently flipped
         Advice: adapt WalkSAT code from selectWalkSATvar
         '''
-
         # (a): Check for hvars with net gain > 0
         gains = self.makecounts - self.breakcounts
         hvars = np.where(gains > 0)[0]
@@ -339,6 +338,15 @@ class GSAT_solver:
                 return np.random.choice(least_recent_vars)
 
     def solve(self):
+        """
+        Main function to solve the SAT problem using GSAT or WalkSAT algorithm.
+        It performs multiple restarts and flips until a solution is found or
+        the maximum number of restarts or flips is reached.
+        Returns:
+            flips: Number of flips performed
+            restarts: Number of restarts performed
+            bestObj: Objective value of the best solution found
+        """
         self.restarts = 0
         while self.restarts < self.maxRestarts and self.bestObj > 0:
             self.restarts += 1
@@ -360,6 +368,9 @@ class GSAT_solver:
         return self.flips, self.restarts, self.bestObj
 
 def solutionChecker(clauses, sol):
+    """
+    Function to check if the solution satisfies all clauses.
+    """
     unsat_clause = 0
     for clause in clauses:
         cStatus = False
@@ -384,7 +395,7 @@ def main():
         print(len(sys.argv))
         print ("Error - Incorrect input")
         print ("Expecting python gsat.py [fileDir] [alg] [number of runs] [max restarts]",
-               "[max flips] [walk prob] [studentNum]")
+               "[max flips] [walk prob] [myselectCustomSATvarNum]")
         sys.exit(0)
     else:
         _, filesDir, alg, nRuns, maxRes, maxFlips, wp, tl, sNum  = sys.argv
@@ -397,7 +408,7 @@ def main():
     time_list = []
 
     # Iterate through all instances in the directory that end with 
-    # last value of your student number 
+    # last value of your seed number 
     statsList = ["Inst", "Solved:", "Obj:","Res:", "Flips:","Time:"]
     h_format_row = "{:>12}"*len(statsList) 
     d_format_row = "{:>12}{:>12}{:>12.3f}{:>12.3f}{:>12.3f}{:>12.3f}"  # changed format as it was not suitable during tests

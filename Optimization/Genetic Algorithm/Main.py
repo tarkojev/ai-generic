@@ -12,8 +12,8 @@ import numpy as np
 from scipy.spatial import distance_matrix
 import pandas as pd 
 import time
-myStudentNum = 42
-random.seed(myStudentNum)
+myselectCustomSATvarNum = 42
+random.seed(myselectCustomSATvarNum)
 
 def readInstance(fName):
     file = open(fName, 'r')
@@ -259,7 +259,7 @@ def main():
     if len(sys.argv) < 9:
         print ("Error - Incorrect input")
         print ("Expecting python TSP.py [instance] [number of runs] [number of iterations] [population size]", 
-                "[initialisation method] [xover prob] [mutate prob] [elitism] [truncation] [student number]")
+                "[initialisation method] [xover prob] [mutate prob] [elitism] [truncation] [custom number]")
         sys.exit(0)
     '''
     Reading in parameters, but it is up to you to implement what needs implementing
@@ -271,7 +271,7 @@ def main():
     _, inst, nRuns, nIters, pop, initH, pC, pM, el, tr = sys.argv
     d = genDists(inst)
     nRuns = int(nRuns)
-    random.seed(myStudentNum)
+    random.seed(myselectCustomSATvarNum)
     startTime = round(time.time(),4) # added metrics: calculate time for initial run
     ga = BasicTSP(inst, nIters, pop, initH, pC, pM, el, tr, d)
     bestDist, distInit, bestSol = ga.search()
@@ -288,7 +288,7 @@ def main():
     for i in range(1,nRuns):
         print(f"Current Run: {i + 1}")
         startTime = round(time.time(),4) # added metrics: calculate time per each run
-        random.seed(myStudentNum+i*100)
+        random.seed(myselectCustomSATvarNum+i*100)
         ga = BasicTSP(inst, nIters, pop, initH, pC, pM, el, tr, d)
         dist, distInit, sol = ga.search()
         stopTime = round(time.time(),4)
@@ -327,4 +327,4 @@ def main():
     
 main()
 
-# default run parameters: python3 TSP_student.py inst-a.tsp 10 1000 100 0 0.9 0.2 0.1 0.5
+# default run parameters: python3 Main.py inst-a.tsp 10 1000 100 0 0.9 0.2 0.1 0.5
